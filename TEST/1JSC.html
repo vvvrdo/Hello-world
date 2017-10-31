@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>learning js</title>
+    <style>body{
+		  text-align: center;
+		  font-family: Roboto, Arial, sans-serif;
+		  font-size: :18px;
+
+		}
+
+		li{
+		  list-style: none;
+		  line-height: 2em;
+		  text-align:left;
+		}
+
+		.container, .container3{
+		  background: #f4f4f4;
+		  border: #ccc 3px solid;
+		  padding: 20px;
+		  min-height: 135px;
+		}
+
+		.header, .container2{
+		  background: #e1e1e1;
+		  border-top: #bbb 3px solid;
+		  border-left: #bbb 3px solid;
+		  border-right: #bbb 3px solid;
+		  padding: 20px;
+
+		}
+		.onMouseOver{
+		  width: 180px;
+		  height: 80px;
+		  color: rgba(2, 184, 252, 0.91);
+		}
+		button, #sub{
+		  cursor: pointer;
+		  border-radius: 8px;
+		  margin: 5px 1px 5px 1px;
+		  background-color: #e5e5e5;
+		  color: rgb(172, 171, 175);
+		  height: 30px;
+		}
+
+		.container2 {
+		  font-weight: bold;
+		  border-top: none;
+		  border-bottom: #bbb 3px solid;
+		}
+
+		.container2 div{
+		  margin: 9px auto;
+
+		}
+		input{
+
+		  border-radius: 6px;
+		  height: 20px;
+		}
+		.backChanger{
+
+		}
+
+		select{
+		  padding: 3px;
+		  margin: 20px;
+		  width: 80%;
+
+		};
+
+		#background.option{
+		    text-align: center;
+		    float: right;
+		}
+
+		.container3{
+		  border-top: none;
+		  min-height: 100px;
+		}
+
+		.container3 button{
+		  height: 100px;
+		}
+		.long{
+		  min-width: 300px;
+		  color: #886855;
+		}
+
+		#reset{
+		  min-width: 88%;
+		  height: 35px;
+		}
+
+		h2{
+		  padding: 0px;
+		  margin: 0px;
+		  cursor: pointer;
+		}
+
+		#colorChange2{
+		  min-width: 70%;
+		  margin: 10px auto;
+		  padding: 5px;
+		}
+		.colorChange{
+		  height: 33px;
+		  color: #fff;
+		}
+
+		.error1{
+		  font-family: cursive;
+		  color: red;
+		  font-size: 10px;
+		}
+
+</style>
+  </head>
+  <body id="body">
+    <div class="header" id="head">
+    <button onclick="doClick()">alert</button>
+    <button onclick="this.innerHTML = 'VAPSHE ABRIS' ">change me inside html</button>
+    <button onclick="do2Click(this)">change me</button>
+    <button onclick="changeText()">heading</button>
+    <button onclick="showDate()">show date</button>
+    <br>
+    <button class="onMouseOver" id="onMouseOver" onclick="col()" onmouseover="hideP(this)" onmouseout="show(this)">PAHI VRES</button>
+</div>
+    <div class="container" id="cont1">
+      <h1 id="heading">JS LEARNING</h1>
+      <p id="pna" class="pna">OH YEA BABY</p>
+    </div>
+    <div class="container2" id="cont2">
+        <div class="backChanger">
+          <label><h2 onclick="olivee()" >>background Color Changer<</h2></label>
+          <br>
+          <select  style="color:#888" "name="background" id="background" onChange="changeBack(this)">
+            <option style="color:#888" id="opt"> ---- Select Color ----</option>
+            <option style="color:red" value="red">red</option>
+            <option style="color:blue" value="blue">blue</option>
+            <option style="color:green" value="green">green</option>
+          </select>
+        </div>
+          <button id="reset" onclick="reset()">RESET</button><br>
+    </div>
+    <div class="container3" id="cont3">
+
+      <button onclick="back1()">First Background</button>
+      <button onclick="back2()">Second Background</button>
+      <button onclick="back3()">Third Background</button><br>
+      <button class="long" onclick="alli()">All Together</button>
+    </div>
+    <script>
+    function doClick(){
+    	alert('ABRIS');
+    };
+
+    function do2Click(xer){
+    	xer.innerHTML = 'du bomb es';
+    };
+
+    function changeText(){
+    	var heading = document.getElementById('heading');
+    	heading.innerHTML = " JOGIR IN4 ARIR"
+    };
+
+    function showDate(){
+    	var pp = document.getElementById('pna');
+    	heading.innerHTML = Date();
+    	pp.innerHTML = " ";
+    };
+
+    function hideP(id){
+
+    	pna.innerHTML = " shut ara)))) ";
+    	heading.innerHTML = " mukt qashi ";
+    	id.innerHTML = "Ok qashi mukt))";
+    	id.style.color = "green";
+    };
+
+    function show(id2){
+    	heading.innerHTML = "DYNAMIC COLOR CHANGE BABY";
+    	pna.style.color = "#91FF79"
+    	pna.innerHTML = " JAVA SCRIPT BABY";
+    	id2.innerHTML = "Press to color change"
+    	id2.style.color = "red"
+    };
+
+    function col(){
+    	heading.style.color = "orange"
+    	pna.style.color = "rgba(255, 88, 6, 0.96)"
+    };
+
+    function changeBack(x){
+    	var body = document.getElementById('body');
+    	body.style.backgroundColor = x.value;
+    };
+
+    function back1(){
+    	var head = document.getElementById('head');
+    	head.style.backgroundColor = "rgba(2, 184, 252, 0.63)";
+    };
+
+    function back2(){
+    	var cont1 = document.getElementById('cont1');
+    	cont1.style.backgroundColor = "rgba(216, 31, 12, 0.87)";
+    	head.style.backgroundColor = "#e1e1e1";
+    };
+
+    function back3(){
+    	var cont2 = document.getElementById('cont2');
+    	cont2.style.backgroundColor = "rgba(29, 2, 252, 0.63)";
+    	cont1.style.backgroundColor = "#f4f4f4";
+    };
+
+    function back4(){
+    	var cont3 = document.getElementById('cont3');
+    	cont3.style.backgroundColor = "#01FF70";
+    };
+
+		function olivee(){
+			cont3.style.backgroundColor = "olive";
+		}
+
+
+		function alli(){
+			body.style.backgroundColor = "#001f3f";
+			head.style.backgroundColor = "#2ECC40";
+			cont1.style.backgroundColor = "#FFDC00";
+			cont2.style.backgroundColor = "#F012BE";
+			cont3.style.backgroundColor = "#01FF70";
+		};
+
+
+		function gob(){
+			var vall = document.getElementById('colorChange2').value;
+			if(vall == null || vall == '' || vall == ' ' || vall == "  "){
+				alert("Nope its Empty)");
+				var err1 = document.getElementById('error1');
+				err1.innerHTML = "*colors definition is required eg...  'blue',   '#fff'   Or RGB ";
+				return false;
+			}
+			if(vall.length < 3){
+				alert("At least 3 chars");
+				return false;
+			}
+			else{
+				body.style.backgroundColor = vall;
+			}
+
+		};
+
+		function reset(){
+		var err1 = document.getElementById('error1');
+			cont2.style.backgroundColor = "#e1e1e1";
+			cont1.style.backgroundColor = "#f4f4f4";
+			head.style.backgroundColor = "#e1e1e1";
+			cont3.style.backgroundColor = "#f4f4f4";
+			body.style.backgroundColor = "#fff";
+			heading.style.color = "black";
+			pna.style.color = "black";
+			err1.innerHTML = " ";
+		};
+</script>
+  </body>
+</html>
