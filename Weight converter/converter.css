@@ -1,0 +1,58 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    max-width: 100%;
+    background: #505050;
+    margin: auto;
+}
+.container{
+    max-width: 43%;
+    margin: 50px auto;
+}
+.body{
+    margin: 10px auto;
+    max-width: 85%;
+}
+.header{
+    font-size: 50px;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    margin-left: 17%;
+}
+.inputDiv{
+    margin: 15px auto;
+}
+.input{
+    height: 35px;
+    width: 100%;
+    border-radius: 4px;
+}
+.cardG, .cardK, .cardO{
+    width: 99%;
+    height:50px;
+    padding: 5px;
+    margin: 4px 0px;
+    border-radius: 3px;    
+}
+.cardG{
+    background: #31df46;
+}
+.cardK{
+    background: #3770d3;
+}
+.cardO{
+    background: #e55f4d;
+}
+h4{
+    margin: 0 auto;
+    padding: 12px;
+    position: sticky;
+    color: #FFF;
+    display: inline-block;
+}
+.out{
+    color: #FFF;
+    display: inline-block;
+    width: 50px;
+    height: 300px;
+}

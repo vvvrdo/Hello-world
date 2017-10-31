@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div class="container">
+     <h1 class="header">Pounds Converter</h1>
+        <div class="body">
+            <form>
+                <div class="inputDiv">
+                    <input type="number" id="inputNum" class="input">
+                </div>
+            </form>
+            <div id="output">
+                    <div class="cardG">
+                        <h4>Grams:</h4>
+                        <div id="grOut" class="out"></div>
+                </div>
+                    <div class="cardK">
+                        <h4>KiloGrams:</h4>
+                        <div id="kgOut" class="out"></div>
+                </div>
+                    <div class="cardO">
+                        <h4>Ounces:</h4>
+                        <div id="ozOut" class="out"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById('output').style.display = 'none'
+document.getElementById('inputNum').addEventListener('input', inputFunc);
+function inputFunc(n){
+    if(n.target.value != '' && n.target.value != '0'){
+    document.getElementById('output').style.display = 'block'
+   const value = n.target.value;
+   const grOut = value/0.0022046;
+   const kgOut = value/2.2046;
+   const ozOut = value*16;
+    document.getElementById('grOut').innerHTML = Math.round(grOut* 1000) / 1000;
+    document.getElementById('kgOut').innerHTML = Math.round(kgOut* 1000) / 1000;
+    document.getElementById('ozOut').innerHTML = Math.round(ozOut* 1000) / 1000;
+    }else{document.getElementById('output').style.display = 'none'};
+};
+</script>
+</html>
