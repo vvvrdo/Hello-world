@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <div class="headerCont">
+              <div class="headerTitle">
+                    <h1 class="To">To</h1><h1 class="Do">Do</h1>
+              </div>
+              <div class="searchBox">
+                  <input id="search" type="text" placeholder=" Search...">
+              </div>
+        </div>
+        <div class="bodyCont">
+            <div class="submitBox">
+                <h1 class="addNote">Add Note</h1><br>
+                    <form id="submit">
+                        <input type="text" id="subText" placeholder=" Type Your Note....">
+                        <input type="submit" id="subButt" value="submit">
+                    </form>
+            </div>
+            <div class="itemsBox" id="hidden">
+                <h2 class="items">What to do</h2><br>
+                <div class="myNotes">
+                    <ul class="notes" id="notes">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>

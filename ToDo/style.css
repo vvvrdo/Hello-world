@@ -1,0 +1,95 @@
+body{
+    font-family: Roboto, Arial, sans-serif;
+    margin: 20px auto;
+    background: #969c9c;
+}
+#body{
+    max-width: 90%;
+    min-height: 500px;
+    margin: 10px auto;
+    background: #e1e3e4;
+    border-radius:10px;
+}
+.headerCont{
+    display: block;
+    min-height: 100px;
+    background: #3d7939;
+    border-bottom: #88642f 8px solid;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.headerTitle{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.searchBox {
+    float: right;
+    margin: 30px;
+}
+.To, .Do{
+    display: inline-block;
+}
+.To{
+    color: #13dd13;
+}
+.Do{
+    color: #af002c;
+}
+#search{
+    height: 32px;
+    width: 360px;
+}
+.bodyCont{
+    margin: 20px auto;
+    max-width: 80%;
+    padding: 10px;
+}
+.addNote{
+    margin: 0;
+}
+#subText{
+    height: 30px;
+    width: 400px;
+}
+#subButt{
+    height: 36px;
+    border-radius: 0px 8px 8px 0px;
+}
+button{
+    cursor: pointer;
+}
+.deleteButt{
+    background: red;
+    color: #cacaca;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    position: sticky;
+    left: 88%;
+    
+}
+.itemsBox{
+    display: none;
+       text-align: center;
+       border: #a1a1a1 1px solid;
+       margin: 10px auto;
+}
+ul{
+    list-style: none;
+    text-align: -webkit-auto;
+    padding: 20px;
+    margin: 5px auto;    
+}
+li{
+    border: #c0dddd 0.5px solid;
+    padding: 10px;
+    background: #dcdcdc;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.addNote, .items{
+    color: #696969;
+}
