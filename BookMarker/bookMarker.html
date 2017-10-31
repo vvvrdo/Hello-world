@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookMaker</title>
+    <link rel="stylesheet" href="bookMarker.css">
+</head>
+<body onload="getBookmarks()">
+    <div class="grid">
+        <div class="title"><h1>Bookmaker</h1></div>
+        <div class="header">header</div>
+        <div class="content">
+            <div class="inputBox">
+                <form id="myForm" class="form">
+                    <div class="name">
+            <input type="text" id="inputName" placeholder="  Enter Name Here....">
+                    </div>
+                    <div class="site">
+            <input type="text" id="inputSite" placeholder="  Enter URL Here....">
+                    </div>
+                    <div class="button">
+            <button type="submit" id="myButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="output" id="output">
+        </div>
+        <div class="footer"><span> Footer &copy</span></div>
+    </div>
+    <script src="bookMarker.js"></script>
+</body>
+</html>
